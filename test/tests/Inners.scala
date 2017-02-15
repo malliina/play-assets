@@ -14,6 +14,7 @@ class Inners extends FunSuite {
   test("asset paths") {
     assert(AppAssets.css.styles.toString === "/assets/css/styles.css")
     assert(AppAssets.js.code.toString === "/assets/js/code.js")
+    assert(AppAssets.css.`class`.toString === "/assets/css/class.css")
   }
 
   class Dir(val prefix: String)
